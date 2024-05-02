@@ -204,21 +204,49 @@
     <input type="email" name="email">
   </label>
   <label>
-    Your message:
+    Your feedback & suggestions:
     <textarea name="message"></textarea>
   </label>
   <!-- your other form fields go here -->
   <button type="submit">Send</button>
 </form>
 
+    <!-- Secret Project Section -->
+    <div class="secret-project" onclick="showPasswordInput()">
+        Top Secret
+    </div>
+
+    <!-- Password Input Field -->
+    <div id="passwordInput" style="display: none;">
+        <form action="#" onsubmit="redirectToSecretProject(); return false;">
+            <label for="password">Enter password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
     <footer>
-        <p>&copy; 2024 PHANTOMX9. All rights reserved.      "feel free to drop suggestions on sinner3116@gmail,com (owner)".</p>
+        <p>&copy; 2024 PHANTOMX9. All rights reserved.</p>
     </footer>
 
     <script>
         function toggleDescription(projectId) {
             var projectDescription = document.getElementById(projectId);
             projectDescription.style.display = (projectDescription.style.display === 'block') ? 'none' : 'block';
+        }
+
+        function showPasswordInput() {
+            var passwordInput = document.getElementById('passwordInput');
+            passwordInput.style.display = 'block';
+        }
+
+        function redirectToSecretProject() {
+            var password = document.getElementById('password').value;
+            if (password === 'proton6105') {
+                window.location.href = 'https://github.com/phantomcodeX9/pass-test/actions/runs/8928148572';
+            } else {
+                alert('Incorrect password! Please try again.');
+            }
         }
     </script>
 </body>
