@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHANTOMX9 Projects</title>
+    <style>
+        body {
+            background-image: url('C:\\Users\\siddh\\Downloads\\LYnrrzN.png'); /* Replace with the path to your image */
+            background-size: cover;
+            background-position: center;
+            color: #ccc; /* Light text color */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 10px 0;
+            color: #4CAF50; /* Green color for headings */
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+        .project {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark gray background for project boxes with transparency */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White shadow */
+            cursor: pointer; /* Add cursor pointer for clickable effect */
+        }
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .project-description {
+            display: none; /* Hide project description by default */
+        }
+        form {
+            margin-top: 30px;
+            border-top: 1px solid #666; /* Gray border */
+            padding-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #4CAF50; /* Green color for labels */
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #666; /* Gray border */
+            background-color: rgba(0, 0, 0, 0.5); /* Dark gray background with transparency */
+            color: #ccc; /* Light text color */
+        }
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green submit button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green hover color */
+        }
+        .red-text {
+            color: red; /* Red color for PHANTOMX9 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Upcoming Projects</h1>
+        <p>Welcome to <span class="red-text">PHANTOMX9</span>'s project tracking website. Here you can find information about my upcoming projects.</p>
+    </header>
+    
+    <!-- Project Section -->
+    <div class="project-container">
+        <!-- Project 1 -->
+        <div class="project" onclick="toggleDescription('project1')">
+            <img src="c:\Users\siddh\OneDrive\Pictures\slideshow\8U2F_GK-J70-HD.jpg" alt="QuantumQuark">
+            <h2>QuantumQuark</h2>
+            <div class="project-description" id="project1">
+                <p>Start Date: june 1, 2024</p>
+                <p>Expected End Date: June 30, 2024</p>
+                <p>INFO:</p>
+                <ul>
+                    <li>Custom Data Q&A (already many of these on the internet)</li>
+                    <li>Accepts files(30mb)</li>
+                    <li>currently supported:txt pdf</li>
+                    <li>CURRENTLY SUPPORTS INTAKE OF 100MESSAGES.as soon as botpress versions become affordable i will upgrade it to 1lakh mssg intake</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project" onclick="toggleDescription('project2')">
+            <img src="c:\Users\siddh\OneDrive\Pictures\slideshow\wxy7utVxc7k-HD.jpg" alt="ChatFusionX">
+            <h2>ChatFusionX</h2>
+            <div class="project-description" id="project2">
+                <p>Start Date: june 15, 2024</p>
+                <p>Expected End Date: july 1, 2024</p>
+                <p>INFO:</p>
+                <ul>
+                    <li>support txt files,machineredable json</li>
+                    <li>learns the replying pattern of the preferred sender/reciever</li>
+                    <li>dataset of 3000 messages will be preferred for better accuracy</li>
+                    <li>can reply on behalf of the person and act the way they possibly will in different scenarios</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project" onclick="toggleDescription('project3')">
+            <img src="c:\Users\siddh\OneDrive\Pictures\slideshow\Screenshot 2024-03-19 091645.png" alt="ShadowCipher">
+            <h2>ShadowCipher</h2>
+            <div class="project-description" id="project3">
+                <p>Start Date: March 1, 2025</p>
+                <p>Expected End Date: September 30, 2025</p>
+                <p>INFO:</p>
+                <ul>
+                    <li>SOON...</li>
+                    <li>Key Point 2</li>
+                    <li>Key Point 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project" onclick="toggleDescription('project4')">
+            <img src="c:\Users\siddh\Downloads\MaverickMastery.jpeg" alt="MaverickMastery">
+            <h2>MaverickMastery</h2>
+            <div class="project-description" id="project4">
+                <p>Start Date: April 1, 2024</p>
+                <p>Expected End Date: October 31, 2024</p>
+                <p>INFO:(for all jee/neet aspirants)</p>
+                <ul>
+                    <li>SOON... wait will be worth it</li>
+                    <li>Key Point 2</li>
+                    <li>Key Point 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project" onclick="toggleDescription('project5')">
+            <img src="c:\Users\siddh\Downloads\InfinityVault.jpeg" alt="InfinityVault">
+            <h2>InfinityVault</h2>
+            <div class="project-description" id="project5">
+                <p>Start Date: May 1, 2025</p>
+                <p>Expected End Date: November 30, 2025</p>
+                <p>INFO:</p>
+                <ul>
+                    <li>SOON...</li>
+                    <li>Key Point 2</li>
+                    <li>Key Point 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project" onclick="toggleDescription('project6')">
+            <img src="c:\Users\siddh\Downloads\PhoenixTechNest.jpeg" alt="PhoenixTechNest">
+            <h2>PhoenixTechNest</h2>
+            <div class="project-description" id="project6">
+                <p>Start Date: September 1, 2024</p>
+                <p>Expected End Date: September 31, 2024</p>
+                <p>INFO:(Not sure if this will  be public)</p>
+                <ul>
+                    <li>Some of the most crazy and useful tech web,apps,extensions</li>
+                    <li>Will surely save you thousands.</li>
+                    <li>NOT SURE IF THIS WILL BE AVAILABLE FOR EVERYONE TO PREVENT MISUSE AND WELLBIENG OF THIS SITE</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comment Section -->
+    <form action="#" method="post">
+        <h2 style="color: #4CAF50;">Leave a Comment(Currently Not working)</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+        <p>&copy; 2024 PHANTOMX9. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDescription(projectId) {
+            var projectDescription = document.getElementById(projectId);
+            projectDescription.style.display = (projectDescription.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
