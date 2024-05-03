@@ -33,9 +33,14 @@
             color: #4CAF50; /* Green color for headings */
         }
         h3 {
-            font-size: 20px;
+            font-size: 25px;
             margin: 10px 0;
             color: #ff0028; /* red color for headings */
+        }
+        h4 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #4CAF50; /* red color for headings */
         }
         p {
             font-size: 18px;
@@ -45,6 +50,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 20px;
+            position: relative;
         }
         .project {
             background-color: rgba(0, 0, 0, 0.7); /* Dark gray background for project boxes with transparency */
@@ -113,8 +119,26 @@
         .secret-project:hover {
             background-color: rgba(0, 0, 0, 0.9);
         }
+        .progress-bar-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 20px;
+            width: 300px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            width: calc((200 / 1000) * 100%);
+            height: 20px;
+            background-color: #4CAF50;
+        }
     </style>
 </head>
+       <!-- Hitsteps TRACKING CODE - Manual 2024-05-03 - DO NOT CHANGE -->
+<script type="text/javascript">(function(){var hstc=document.createElement('script'); hstc.src='https://edgecdn.dev/code?code=fbc92205d1c4ecfc5b36cc58b7ad3cd4';hstc.async=true;var htssc = document.getElementsByTagName('script')[0];htssc.parentNode.insertBefore(hstc, htssc);})();
+</script><noscript><a href="http://www.hitsteps.com/"><img src="//edgecdn.dev/code?mode=img&amp;code=fbc92205d1c4ecfc5b36cc58b7ad3cd4" alt="Realtime website tracking" width="1" height="1" />web stats</a></noscript>
 <body>
     <header>
         <h1>Upcoming Projects</h1>
@@ -245,17 +269,22 @@
         function redirectToSecretProject() {
             var password = document.getElementById('password').value;
             if (password === 'proton6105') {
-                window.location.href = 'https://github.com/phantomcodeX9/pass-test/actions/runs/8928148572';
+                window.location.href = 'https://github.com/phantomcodeX9/phantomX9/edit/main/index.html';
             } else {
-                alert('Incorrect password! Please try again.');
+                alert('Ignorance Is Bliss');
             }
         }
     </script>
 
+        <!-- Progress Bar for QuantumQuark Funding -->
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
+
         <!-- Password Input Field -->
     <div id="passwordInput" style="display: none;">
         <form action="#" onsubmit="redirectToSecretProject(); return false;">
-            <label for="password">Enter password:</label>
+            <label for="password"><h4>Enter password:</h4></label>
             <input type="password" id="password" name="password" required>
             <input type="submit" value="Submit">
         </form>
@@ -267,13 +296,13 @@
   action="https://formspree.io/f/mjvnleop"
   method="POST"
 >
-  <h3>SUGGESTIONS & FEEDBACK(it matters a lot)</h3>  
+  <h3>SUGGESTIONS & FEEDBACK (It matters a lot)</h3>  
   <label>
-    Your email:
+    <h4>Your email:</h4>
     <input type="email" name="email">
   </label>
   <label>
-    Your feedback & suggestions:
+    <h4>Your feedback & suggestions:</h4>
     <textarea name="message"></textarea>
   </label>
   <!-- your other form fields go here -->
