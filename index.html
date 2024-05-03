@@ -95,6 +95,13 @@
             font-size: 24px;
             color: red;
             opacity: 0.9;
+            float: left; /* Align to the left */
+        }
+        .progress-bar {
+            background-color: green; /* Green color for progress */
+            height: 10px;
+            width: 27%; /* Adjust width to indicate completion */
+            margin-bottom: 10px;
         }
         .secret-project:hover {
             background-color: rgba(0, 0, 0, 0.9);
@@ -113,16 +120,17 @@
         <div class="project" onclick="toggleDescription('project1')">
             <img src="8U2F_GK-J70-HD.jpg" alt="QuantumQuark">
             <h2>QuantumQuark</h2>
-            <div class="progress-bar" style="background-color: green; height: 10px; width: 27%; margin-bottom: 10px;"></div>
+            <!-- Progress Bar -->
+            <div class="progress-bar"></div>
             <div class="project-description" id="project1">
-                <p>Start Date: june 1, 2024</p>
+                <p>Start Date: June 1, 2024</p>
                 <p>Expected End Date: June 30, 2024</p>
                 <p>INFO:</p>
                 <ul>
                     <li>Custom Data Q&A (already many of these on the internet)</li>
-                    <li>Accepts files(30mb)</li>
-                    <li>currently supported:txt pdf</li>
-                    <li>CURRENTLY SUPPORTS INTAKE OF 100MESSAGES.as soon as botpress versions become affordable i will upgrade it to 10K mssg intake</li>
+                    <li>Accepts files (30mb)</li>
+                    <li>Currently supported: txt pdf</li>
+                    <li>CURRENTLY SUPPORTS INTAKE OF 100MESSAGES. As soon as botpress versions become affordable, I will upgrade it to 10K message intake.</li>
                 </ul>
             </div>
         </div>
@@ -131,15 +139,17 @@
         <div class="project" onclick="toggleDescription('project2')">
             <img src="wxy7utVxc7k-HD.jpg" alt="ChatFusionX">
             <h2>ChatFusionX</h2>
+            <!-- Progress Bar -->
+            <div class="progress-bar"></div>
             <div class="project-description" id="project2">
-                <p>Start Date: june 15, 2024</p>
-                <p>Expected End Date: july 1, 2024</p>
+                <p>Start Date: June 15, 2024</p>
+                <p>Expected End Date: July 1, 2024</p>
                 <p>INFO:</p>
                 <ul>
-                    <li>support txt files,machineredable json</li>
-                    <li>learns the replying pattern of the preferred sender/reciever</li>
-                    <li>dataset of 3000 messages will be preferred for better accuracy</li>
-                    <li>can reply on behalf of the person and act the way they possibly will in different scenarios</li>
+                    <li>Support txt files, machine-readable JSON</li>
+                    <li>Learns the replying pattern of the preferred sender/receiver</li>
+                    <li>Dataset of 3000 messages will be preferred for better accuracy</li>
+                    <li>Can reply on behalf of the person and act the way they possibly will in different scenarios</li>
                     <li>Works on QuantumQuark model</li>
                 </ul>
             </div>
@@ -149,6 +159,8 @@
         <div class="project" onclick="toggleDescription('project3')">
             <img src="Screenshot 2024-03-19 091645.png" alt="ShadowCipher">
             <h2>ShadowCipher</h2>
+            <!-- Progress Bar -->
+            <div class="progress-bar"></div>
             <div class="project-description" id="project3">
                 <p>Start Date: March 1, 2025</p>
                 <p>Expected End Date: September 30, 2025</p>
@@ -165,10 +177,12 @@
         <div class="project" onclick="toggleDescription('project4')">
             <img src="MaverickMastery.jpeg" alt="MaverickMastery">
             <h2>MaverickMastery</h2>
+            <!-- Progress Bar -->
+            <div class="progress-bar"></div>
             <div class="project-description" id="project4">
                 <p>Start Date: April 1, 2024</p>
                 <p>Expected End Date: October 31, 2024</p>
-                <p>INFO:(for all jee/neet aspirants)</p>
+                <p>INFO:(for all JEE/NEET aspirants)</p>
                 <ul>
                     <li>SOON... wait will be worth it</li>
                     <li>Key Point 2</li>
@@ -181,6 +195,8 @@
         <div class="project" onclick="toggleDescription('project5')">
             <img src="InfinityVault.jpeg" alt="InfinityVault">
             <h2>InfinityVault</h2>
+            <!-- Progress Bar -->
+            <div class="progress-bar"></div>
             <div class="project-description" id="project5">
                 <p>Start Date: May 1, 2025</p>
                 <p>Expected End Date: November 30, 2025</p>
@@ -197,25 +213,51 @@
         <div class="project" onclick="toggleDescription('project6')">
             <img src="PhoenixTechNest.jpeg" alt="PhoenixTechNest">
             <h2><span class="blue-text">PhoenixTechNest</span></h2>
+            <!-- Progress Bar -->
+            <div class="progress-bar"></div>
             <div class="project-description" id="project6">
                 <p>Start Date: September 1, 2024</p>
                 <p>Expected End Date: September 31, 2024</p>
-                <p>INFO:(Not sure if this will  be public)</p>
+                <p>INFO:(Not sure if this will be public)</p>
                 <ul>
-                    <li>Some of the most crazy and useful tech web,apps,extensions</li>
+                    <li>Some of the most crazy and useful tech web, apps, extensions</li>
                     <li>Will surely save you thousands.</li>
-                    <li>NOT SURE IF THIS WILL BE AVAILABLE FOR EVERYONE TO PREVENT MISUSE AND WELLBIENG OF THIS SITE</li>
+                    <li>NOT SURE IF THIS WILL BE AVAILABLE FOR EVERYONE TO PREVENT MISUSE AND WELLBEING OF THIS SITE</li>
                 </ul>
             </div>
         </div>
     </div>
     
-      <!-- Secret Project Section -->
+    <!-- Secret Project Section -->
     <div class="secret-project" onclick="showPasswordInput()">
         Top Secret
     </div>
     
-        <script>
+    <!-- Password Input Field -->
+    <div id="passwordInput" style="display: none;">
+        <form action="#" onsubmit="redirectToSecretProject(); return false;">
+            <label for="password">Enter password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Submit">
+        </form>
+        <!-- Money Contribution Section -->
+        <p>Money Contributed: $500</p> <!-- Change the amount as needed -->
+    </div>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/mjvnleop" method="POST">
+        <label>Your email:</label>
+        <input type="email" name="email">
+        <label>Your feedback & suggestions:</label>
+        <textarea name="message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+    
+    <footer>
+        <p>&copy; 2024 PHANTOMX9. All rights reserved, owner: sinner3116@gmail.com.</p>
+    </footer>
+
+    <script>
         function toggleDescription(projectId) {
             var projectDescription = document.getElementById(projectId);
             projectDescription.style.display = (projectDescription.style.display === 'block') ? 'none' : 'block';
@@ -235,37 +277,5 @@
             }
         }
     </script>
-
-        <!-- Password Input Field -->
-    <div id="passwordInput" style="display: none;">
-        <form action="#" onsubmit="redirectToSecretProject(); return false;">
-            <label for="password">Enter password:</label>
-            <input type="password" id="password" name="password" required>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-
-
-<!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/mjvnleop"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your feedback & suggestions:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-    
-    <footer>
-        <p>&copy; 2024 PHANTOMX9. All rights reserved    
-            owner:(sinner3116@gmail.com).</p>
-    </footer>
 </body>
 </html>
