@@ -208,6 +208,26 @@
             </div>
         </div>
     </div>
+        <script>
+        function toggleDescription(projectId) {
+            var projectDescription = document.getElementById(projectId);
+            projectDescription.style.display = (projectDescription.style.display === 'block') ? 'none' : 'block';
+        }
+
+        function showPasswordInput() {
+            var passwordInput = document.getElementById('passwordInput');
+            passwordInput.style.display = 'block';
+        }
+
+        function redirectToSecretProject() {
+            var password = document.getElementById('password').value;
+            if (password === 'proton6105') {
+                window.location.href = 'https://github.com/phantomcodeX9/pass-test/actions/runs/8928148572';
+            } else {
+                alert('Incorrect password! Please try again.');
+            }
+        }
+    </script>
 
         <!-- Password Input Field -->
     <div id="passwordInput" style="display: none;">
@@ -245,26 +265,5 @@
         <p>&copy; 2024 PHANTOMX9. All rights reserved    
             owner:(sinner3116@gmail.com).</p>
     </footer>
-
-    <script>
-        function toggleDescription(projectId) {
-            var projectDescription = document.getElementById(projectId);
-            projectDescription.style.display = (projectDescription.style.display === 'block') ? 'none' : 'block';
-        }
-
-        function showPasswordInput() {
-            var passwordInput = document.getElementById('passwordInput');
-            passwordInput.style.display = 'block';
-        }
-
-        function redirectToSecretProject() {
-            var password = document.getElementById('password').value;
-            if (password === 'proton6105') {
-                window.location.href = 'https://github.com/phantomcodeX9/pass-test/actions/runs/8928148572';
-            } else {
-                alert('Incorrect password! Please try again.');
-            }
-        }
-    </script>
 </body>
 </html>
