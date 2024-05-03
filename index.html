@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-       <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XNPEF203K5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNPEF203K5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-XNPEF203K5');
-</script>
+        gtag('config', 'G-XNPEF203K5');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHANTOMX9 Projects</title>
@@ -120,16 +120,20 @@
             background-color: rgba(0, 0, 0, 0.9);
         }
         .progress-bar-container {
-            width: 90%;
-            margin: 20px auto;
-            background-color: #ddd;
-            border-radius: 5px;
-            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .progress-bar {
-            width: 20%; /* Adjust width dynamically using inline style or JavaScript */
-            height: 20px;
-            background-color: #4CAF50; /* Green color for progress */
+            background-color: green;
+            height: 10px;
+            width: 20%; /* Adjust width dynamically based on funding */
+            margin-bottom: 10px;
+        }
+        .progress-label {
+            text-align: center;
+            font-size: 18px;
+            color: #4CAF50; /* Green color for labels */
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -262,59 +266,59 @@
         </div>
     </div>
     
-    <!-- Secret Project Section -->
-    <div class="secret-project" onclick="showPasswordInput()">
-        Top Secret
-    </div>
-    
-    <!-- Progress Bar for QuantumQuark Funding -->
-    <div class="progress-bar-container">
-        <div class="progress-bar" style="width: 20%;"></div> <!-- Adjust width dynamically based on funding -->
-    </div>
+<!-- Secret Project Section -->
+<div class="secret-project" onclick="showPasswordInput()">
+    Top Secret
+</div>
 
-    <!-- Password Input Field -->
-    <div id="passwordInput" style="display: none;">
-        <form action="#" onsubmit="redirectToSecretProject(); return false;">
-            <label for="password"><h4>Enter password:</h4></label>
-            <input type="password" id="password" name="password" required>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-
-    <!-- Contact Form -->
-    <form action="https://formspree.io/f/mjvnleop" method="POST">
-        <h3>Suggestions & Feedback (It matters a lot)</h3>
-        <label for="email"><h4>Your email:</h4></label>
-        <input type="email" id="email" name="email">
-        <label for="message"><h4>Your feedback & suggestions:</h4></label>
-        <textarea id="message" name="message"></textarea>
-        <button type="submit">Send</button>
+<!-- Password Input Field -->
+<div id="passwordInput" style="display: none;">
+    <form action="#" onsubmit="redirectToSecretProject(); return false;">
+        <label for="password"><h4>Enter password:</h4></label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Submit">
     </form>
-    
-    <footer>
-        <p>&copy; 2024 PHANTOMX9. All rights reserved, owner: sinner3116@gmail.com.</p>
-        <p>UPI ID: XYZ@YBLBANK</p>
-    </footer>
+</div>
 
-    <script>
-        function toggleDescription(projectId) {
-            var projectDescription = document.getElementById(projectId);
-            projectDescription.style.display = (projectDescription.style.display === 'block') ? 'none' : 'block';
-        }
+<!-- Form for suggestions and feedback -->
+<form action="https://formspree.io/f/mjvnleop" method="POST">
+    <h3>SUGGESTIONS & FEEDBACK (It matters a lot)</h3>
+    <label>
+        <h4>Your email:</h4>
+        <input type="email" name="email">
+    </label>
+    <label>
+        <h4>Your feedback & suggestions:</h4>
+        <textarea name="message"></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit">Send</button>
+</form>
 
-        function showPasswordInput() {
-            var passwordInput = document.getElementById('passwordInput');
-            passwordInput.style.display = 'block';
-        }
+<footer>
+    <p>&copy; 2024 PHANTOMX9. All rights reserved owner:(sinner3116@gmail.com).</p>
+</footer>
 
-        function redirectToSecretProject() {
-            var password = document.getElementById('password').value;
-            if (password === 'proton6105') {
-                window.location.href = 'https://github.com/phantomcodeX9/phantomX9/edit/main/index.html';
-            } else {
-                alert('Ignorance Is Bliss');
-            }
+<script>
+    function toggleDescription(projectId) {
+        var projectDescription = document.getElementById(projectId);
+        projectDescription.style.display = (projectDescription.style.display === 'block') ? 'none' : 'block';
+    }
+
+    function showPasswordInput() {
+        var passwordInput = document.getElementById('passwordInput');
+        passwordInput.style.display = 'block';
+    }
+
+    function redirectToSecretProject() {
+        var password = document.getElementById('password').value;
+        if (password === 'proton6105') {
+            window.location.href = 'https://github.com/phantomcodeX9/phantomX9/edit/main/index.html';
+        } else {
+            alert('Ignorance Is Bliss');
         }
-    </script>
+    }
+</script>
+
 </body>
 </html>
