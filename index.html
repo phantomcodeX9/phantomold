@@ -42,7 +42,8 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 10px;
-            margin-left: 300px
+            margin-left: 300px;
+            margin-top: 50px; /* Add margin to separate from the fixed info container */
         }
         .project {
             background-color: rgba(0, 0, 0, 0.7); /* Dark gray background for project boxes with transparency */
@@ -127,14 +128,15 @@
             background-color: #1C39BB; /* persian blue color for progress */
         }
         .info-container {
-            float: left;
+            position: fixed; /* Fix the container to the left side */
+            top: 20px; /* Adjust the distance from the top */
+            left: 20px; /* Adjust the distance from the left */
             width: 18%;
             padding: 20px;
             color: #ccc;
             background-color: rgba(0, 0, 0, 0.9);
-            text-align: center; /* Center-align text */
-            margin-top: 50px; /* Add margin to separate from the project container */
-            margin-left: 10px; /* Add margin to move it slightly to the right */
+            text-align: center;
+            margin-top: 50px;
         }
         .logo {
             width: 90px;
