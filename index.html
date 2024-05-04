@@ -125,6 +125,16 @@
             height: 20px;
             background-color: #1C39BB; /* persian blue color for progress */
         }
+        .info-container {
+            float: left; /* Align to the left */
+            width: 20%; /* Adjust the width as needed */
+            padding: 20px;
+            color: #ccc;
+        }
+        .project { /* Adjust the width of the project boxes */
+            width: calc(80% - 20px); /* 80% of the remaining width after info container */
+          /* Remaining CSS styles for .project remain the same */
+        }
     </style>
 </head>
        <!-- Hitsteps TRACKING CODE - Manual 2024-05-03 - DO NOT CHANGE -->
@@ -135,7 +145,18 @@
         <h1>Upcoming Projects</h1>
         <p>Welcome to <span class="red-text">PHANTOMX9</span>'s project tracking website. Here you can find information about my upcoming projects.</p>
     </header>
-    
+
+     <div class="info-container">
+        <!-- Your information goes here -->
+        <h2>PHANTOMX9</h2>
+        <p>Social Media Links:</p>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <!-- Add more links as needed -->
+        </ul>
+    </div>
+
     <!-- Project Section -->
     <div class="project-container">
         <!-- Project 1 -->
