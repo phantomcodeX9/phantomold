@@ -131,7 +131,7 @@
             left: 0;
             height: 100%;
             width: 250px; /* Adjust width as needed */
-            background-color: rgba(0, 0, 0, 0.7); /* Dark gray background with transparency */
+            background-color: rgba(0, 0, 0, 0); /* Dark gray background with transparency */
             padding: 20px;
             overflow-y: auto; /* Allow vertical scrolling if content overflows */
             z-index: 1; /* Ensure sidebar stays above other content */
@@ -159,16 +159,14 @@
         }
         /* Adjust main content to accommodate sidebar */
         .main-content {
-            margin-left: 220px; /* Adjust according to sidebar width */
+            margin-left: 270px; /* Adjust according to sidebar width */
         }
         /* Adjust feedback and suggestion section */
         .feedback-section {
-            display: flex;
-            justify-content: space-between;
+            margin-top: 20px; /* Add some space between sidebar and feedback section */
         }
         .feedback-section form {
-            flex: 1; /* Take remaining space */
-            margin-right: 20px; /* Add some spacing between feedback form and sidebar */
+            margin-bottom: 20px; /* Add some space below the form */
         }
     </style>
 </head>
@@ -331,20 +329,17 @@
         </form>
     </div>
 
-        <!-- Feedback and Suggestion Section -->
-        <div class="feedback-section">
-            <form action="https://formspree.io/f/mjvnleop" method="POST">
-                <h3>Suggestions & Feedback (It matters a lot)</h3>
-                <label for="email"><h4>Your email:</h4></label>
-                <input type="email" id="email" name="email">
-                <label for="message"><h4>Your feedback & suggestions: "Let me Know about the project you are waiting".</h4></label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <!-- Placeholder for any other content -->
-        </div>
+    <!-- Feedback and Suggestion Section -->
+    <div class="feedback-section">
+        <form action="https://formspree.io/f/mjvnleop" method="POST">
+            <h3>Suggestions & Feedback (It matters a lot)</h3>
+            <label for="email"><h4>Your email:</h4></label>
+            <input type="email" id="email" name="email">
+            <label for="message"><h4>Your feedback & suggestions: "Let me Know about the project you are waiting".</h4></label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
     </div>
-
        
          <!-- Progress Bar for QuantumQuark Funding -->
     <div class="progress-bar-container">
