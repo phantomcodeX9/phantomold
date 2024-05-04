@@ -125,40 +125,66 @@
             height: 20px;
             background-color: #1C39BB; /* persian blue color for progress */
         }
-        .left-area {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px; /* Adjust width as needed */
-    padding: 20px;
-    background-color: #333; /* Example background color */
-    color: #fff; /* Example text color */
-}
-
-.left-area.sticky {
-    position: fixed;
-    top: 0;
-}
+         .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px; /* Adjust width as needed */
+            background-color: rgba(0, 0, 0, 0.7); /* Dark gray background with transparency */
+            padding: 20px;
+            overflow-y: auto; /* Allow vertical scrolling if content overflows */
+            z-index: 1; /* Ensure sidebar stays above other content */
+            color: #ccc; /* Light text color */
+        }
+        .logo {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .logo img {
+            max-width: 100%;
+        }
+        .name {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .social-links {
+            text-align: center;
+        }
+        .social-links a {
+            color: #ccc;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        /* Adjust main content to accommodate sidebar */
+        .main-content {
+            margin-left: 220px; /* Adjust according to sidebar width */
+        }
     </style>
 </head>
        <!-- Hitsteps TRACKING CODE - Manual 2024-05-03 - DO NOT CHANGE -->
 <script type="text/javascript">(function(){var hstc=document.createElement('script'); hstc.src='https://edgecdn.dev/code?code=fbc92205d1c4ecfc5b36cc58b7ad3cd4';hstc.async=true;var htssc = document.getElementsByTagName('script')[0];htssc.parentNode.insertBefore(hstc, htssc);})();
 </script><noscript><a href="http://www.hitsteps.com/"><img src="//edgecdn.dev/code?mode=img&amp;code=fbc92205d1c4ecfc5b36cc58b7ad3cd4" alt="Realtime website tracking" width="1" height="1" />web stats</a></noscript>
 <body>
-    <!-- Left Area -->
-    <div class="left-area" id="leftArea">
+        <!-- Sidebar -->
+    <div class="sidebar">
         <div class="logo">
-            <img src="PHOENIX.JPEG" alt="Your Logo">
+            <img src="phoenix.jpeg" alt="Your Logo">
         </div>
         <div class="name">
-            <h2>JAMES</h2>
+            SHIVAM
         </div>
         <div class="social-links">
-            <a href="your-social-media-link">Social Media 1</a>
-            <a href="your-social-media-link">Social Media 2</a>
-            <!-- Add more social media links as needed -->
+            <!-- Replace '#' with your actual social media links -->
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
         </div>
     </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
     <header>
         <h1>Upcoming Projects</h1>
         <p>Welcome to <span class="red-text">PHANTOMX9</span>'s project tracking website. Here you can find information about my upcoming projects.</p>
