@@ -39,11 +39,11 @@
             line-height: 1.6;
         }
         .project-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
-            position: relative;
-            margin-left: 300px;
+             display: grid;
+             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the column width */
+             grid-gap: 10px; /* Adjust the gap between columns */
+             position: relative;
+             margin-left: 260px; 
         }
         .project {
             background-color: rgba(0, 0, 0, 0.7); /* Dark gray background for project boxes with transparency */
@@ -52,7 +52,6 @@
             width: calc(50% - 10px);
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White shadow */
             cursor: pointer; /* Add cursor pointer for clickable effect */
-            height: 400px;
         }
         .project img {
             width: 100%;
