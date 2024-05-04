@@ -154,12 +154,19 @@
         .main-content {
             margin-left: 270px; /* Adjust according to sidebar width */
         }
-        /* Adjust feedback and suggestion section */
-        .feedback-section {
-            margin-top: 20px; /* Add some space between sidebar and feedback section */
+        .feedback-section-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: auto; /* Pushes the container to the bottom of its parent */
         }
-        .feedback-section form {
-            margin-bottom: 20px; /* Add some space below the form */
+        .feedback-section {
+            width: 50%; /* Adjust width as needed */
+            margin-top: 20px; /* Add some space */
+        }
+        .content-section {
+            width: 100%; /* Adjust width as needed */
+        /* Your existing styles for the content section */
         }
     </style>
 </head>
@@ -173,7 +180,7 @@
             <img src="phoenix.jpeg" alt="Your Logo">
         </div>
         <div class="name">
-            SHIVAM
+            phanttomcodeX9
         </div>
         <div class="social-links">
             <!-- Replace '#' with your actual social media links -->
@@ -184,7 +191,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="main-content">
+    <div class="main-content - ">
     <header>
         <h1>Upcoming Projects</h1>
         <p>Welcome to <span class="red-text">PHANTOMX9</span>'s project tracking website. Here you can find information about my upcoming projects.</p>
@@ -322,6 +329,7 @@
         </form>
     </div>
 
+<div class="content-section">
     <!-- Feedback and Suggestion Section -->
     <div class="feedback-section">
         <form action="https://formspree.io/f/mjvnleop" method="POST">
@@ -345,6 +353,7 @@
         <p>**DUE TO LOW FUNDS CURRENTLY I DON'T HAVE ANY SERVER TO HOST OUR MODELS ON LARGE SCALE BUT I CAN GIVE ACCESS TO LIMITED NUMBER OF PEOPLES JUST DROP THE NAME OF MODEL/PROJECT IN FEEDBACK WITH YOUR Gmail.**</p>
         <p>UPI ID: soon...</p>
     </footer>
+</div>
 
     <script>
         function toggleDescription(projectId) {
