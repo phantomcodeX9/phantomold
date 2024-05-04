@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHANTOMX9 Projects</title>
@@ -45,7 +46,7 @@
         }
         .project {
             background-color: rgba(0, 0, 0, 0.7); /* Dark gray background for project boxes with transparency */
-            padding: 10px; /* Reduced padding */
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White shadow */
             cursor: pointer; /* Add cursor pointer for clickable effect */
@@ -124,25 +125,16 @@
             height: 20px;
             background-color: #1C39BB; /* persian blue color for progress */
         }
-        .information-area {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20%;
-            background-color: rgba(0, 0, 0, 0.5);
+        .info-container {
+            float: left; /* Align to the left */
+            width: 20%; /* Adjust the width as needed */
             padding: 20px;
-            opacity: 0.5;
-            height: 100%;
+            color: #ccc;
         }
-        .information-area p {
-            color: #fff;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        .logo {
-            width: 100px; /* Adjust the width of the logo */
-            margin-bottom: 20px;
-            margin-left: 20px; /* Adjust the left margin */
+
+/* Adjust the width of the project boxes */
+        .project {
+            width: calc(80% - 20px); /* 80% of the remaining width after info container */
         }
     </style>
 </head>
@@ -151,15 +143,20 @@
 </script><noscript><a href="http://www.hitsteps.com/"><img src="//edgecdn.dev/code?mode=img&amp;code=fbc92205d1c4ecfc5b36cc58b7ad3cd4" alt="Realtime website tracking" width="1" height="1" />web stats</a></noscript>
 <body>
     <header>
-        <div class="information-area">
-            <img src="xyz.png" alt="XYZ Logo" class="logo"> <!-- Replace "xyz.png" with your logo path -->
-            <p>PHANTOMX9</p>
-            <p>Social Media Links</p>
-            <!-- Add your social media links here -->
-        </div>
         <h1>Upcoming Projects</h1>
         <p>Welcome to <span class="red-text">PHANTOMX9</span>'s project tracking website. Here you can find information about my upcoming projects.</p>
     </header>
+
+        <div class="info-container">
+        <!-- Your information goes here -->
+        <h2>PHANTOMX9</h2>
+        <p>Social Media Links:</p>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <!-- Add more links as needed -->
+        </ul>
+    </div>
     
     <!-- Project Section -->
     <div class="project-container">
