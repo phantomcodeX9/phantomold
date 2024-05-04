@@ -124,16 +124,30 @@
             width: 20%; /* Adjust width dynamically using inline style or JavaScript */
             height: 20px;
             background-color: #1C39BB; /* persian blue color for progress */
+        .logo-container {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+            width: 100%;
+            padding: 20px; /* Adjust padding as needed */
+            box-sizing: border-box; /* Ensure padding is included in width */
         }
+
+        .logo-container img {
+            display: block;
+            max-width: 100%; /* Adjust maximum width of the logo image */
+            margin: 0 auto; /* Center the logo horizontally */
+        }
+
         .info-container {
-            float: left; /* Align to the left */
-            width: 20%; /* Adjust the width as needed */
-            padding: 20px;
-            color: #ccc;
+            background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+            padding: 20px; /* Adjust padding as needed */
+            box-sizing: border-box; /* Ensure padding is included in width */
         }
-        .project { /* Adjust the width of the project boxes */
+
+/* Adjust the width of the project boxes */
+        .project {
             width: calc(80% - 20px); /* 80% of the remaining width after info container */
-          /* Remaining CSS styles for .project remain the same */
+             /* Remaining CSS styles for .project remain the same */
         }
     </style>
 </head>
@@ -142,6 +156,22 @@
 </script><noscript><a href="http://www.hitsteps.com/"><img src="//edgecdn.dev/code?mode=img&amp;code=fbc92205d1c4ecfc5b36cc58b7ad3cd4" alt="Realtime website tracking" width="1" height="1" />web stats</a></noscript>
 <body>
     <header>
+        <!-- Logo image goes here -->
+        <div class="logo-container">
+            <img src="MaverickMastery.jpeg" alt="Logo">
+        </div>
+
+    <div class="info-container">
+        <!-- Your information goes here -->
+        <h2>PHANTOMX9</h2>
+        <p>Social Media Links:</p>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <!-- Add more links as needed -->
+        </ul>
+    </div>
+
         <h1>Upcoming Projects</h1>
         <p>Welcome to <span class="red-text">PHANTOMX9</span>'s project tracking website. Here you can find information about my upcoming projects.</p>
     </header>
