@@ -51,18 +51,33 @@
             grid-gap: 20px;
             position: relative;
         }
-        .project {
-            background-color: rgba(0, 0, 0, 0.7); /* Dark gray background for project boxes with transparency */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White shadow */
-            cursor: pointer; /* Add cursor pointer for clickable effect */
-        }
-        .project img {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
+.project {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
         .project-description {
             display: none; /* Hide project description by default */
         }
