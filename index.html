@@ -274,6 +274,52 @@ input[type="submit"]:hover {
     margin: 5px 0; /* Adjust margin for team member names */
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add text shadow */
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  color: #ccc;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ccc;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #4CAF50;
+}
+
+.dropdown:hover .dropdown-btn {
+  background-color: #4CAF50;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 @keyframes fadeIn {
     0% {
@@ -311,6 +357,14 @@ input[type="submit"]:hover {
     </div>
         <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script><a data-type="countdown" data-id="5249561" class="tickcounter" style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:18%; margin:0 auto;" title="WEB UPDATE X SINNER3116" href="//www.tickcounter.com/">WEB UPDATE X SINNER3116</a>
 
+<div class="dropdown">
+  <button class="dropdown-btn">Recent Updates</button>
+  <div class="dropdown-content">
+    <a href="#">Update 1</a>
+    <a href="#">Update 2</a>
+    <a href="#">Update 3</a>
+  </div>
+</div>
         </div>
     </div>
 
