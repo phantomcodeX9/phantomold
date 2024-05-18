@@ -198,6 +198,18 @@
         .team-members p {
             margin: 5px 0; /* Adjust margin for team member names */
         }
+        .cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #68D391, #48BB78, #2F9D66);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
     </style>
 </head>
        <!-- Hitsteps TRACKING CODE - Manual 2024-05-03 - DO NOT CHANGE -->
@@ -386,6 +398,8 @@
         <div class="progress-bar" style="width: 5%;"></div>
         <h4>200/8000 Fundings Available!!</h4>
     </div>
+
+ <div class="cursor" id="cursor"></div>
     
     <footer>
         <p>&copy; 2024 PHANTOMX9. All rights reserved, owner: phantomcodex9@gmail.com.</p>
@@ -412,6 +426,17 @@
             } else {
                 alert('Ignorance Is Bliss');
             }
+const cursor = document.getElementById("cursor");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.top = e.pageY + "px";
+  cursor.style.left = e.pageX + "px";
+  cursor.style.opacity = 1;
+});
+
+document.addEventListener("mouseleave", () => {
+  cursor.style.opacity = 0;
+});
         }
     </script>
 </body>
